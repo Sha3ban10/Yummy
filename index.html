@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>YUMMY</title>
+
+    <!-- CSS-Links -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body class="bg-black overflow-hidden">
+
+    <!-- Loading page -->
+    <div
+        class="loading vh-100 w-100 bg-dark d-flex justify-content-center align-items-center position-absolute z-3 top-0">
+        <span class="loader"></span>
+    </div>
+    <!-- Side-Bar -->
+    <aside class="d-flex position-fixed top-0 bottom-0 z-2 ">
+        <div class="Links bg-black  ">
+            <div class="container d-flex flex-column justify-content-between h-100 p-4 text-white">
+                <div class="UL-Links overflow-hidden">
+                    <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li><a>Search</a></li>
+                        <li><a>Categories</a></li>
+                        <li><a>Area</a></li>
+                        <li><a>Ingredients</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="Copyright">
+                    <div class="social">
+                        <ul class="list-unstyled d-flex gap-1 m-0">
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-globe"></i></a></li>
+                        </ul>
+                        <p class="m-0">Copyright Â© 2019 All Rights</p>
+                        <p>Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Bar bg-white">
+            <div
+                class="container- d-flex flex-column justify-content-between align-items-center h-100  py-3 px-2 text-black">
+                <div class="imageYummy" style="width: 50px;">
+                    <img src="img/logo.png" alt="" class="w-100">
+                </div>
+                <div class="icon">
+                    <a class="text-black pe-auto"><i class="fa-solid fa-x fs-2"></i></a>
+                </div>
+                <div class="BarLinks">
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-black"><i class="fa-solid fa-globe"></i></a></li>
+                        <li><a href="" class="text-black"><i class="fa-solid fa-share-nodes"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Home -->
+    <div class="Home ">
+        <div class="container my-5 ">
+            <div class="row homeMeals gy-4">
+
+            </div>
+        </div>
+        <div class="MealDetails text-white">
+
+        </div>
+    </div>
+
+    <!-- Search -->
+    <div class="AsideLinks ">
+        <div class="Search d-none">
+            <div class="SearchInputs d-flex container gap-3 mt-4 ">
+                <input type="text" name="searchName" class="form-control bg-transparent text-bg-success" id="searchName"
+                    placeholder="Search By Name">
+                <input type="text" maxlength="1" name="searchFLetter"
+                    class="form-control bg-transparent text-bg-success" id="searchFLetter"
+                    placeholder="Search By First Letter">
+            </div>
+            <div class="container my-5 ">
+                <div class="row homeMeals gy-4">
+                </div>
+                <div class="MealDetails text-white">
+                </div>
+            </div>
+        </div>
+        <div class="Categories d-none">
+            <div class="container">
+                <div class="row category  gy-4 my-5">
+
+                </div>
+                <div class="row categoryMeal gy-4 my-5">
+
+                </div>
+                <div class="MealDetails text-white">
+
+                </div>
+            </div>
+        </div>
+        <div class="Area d-none">
+            <div class="container">
+                <div class="row AreaList gy-4 my-5">
+                </div>
+                <div class="row AreaMeal gy-4 my-5 ">
+                </div>
+                <div class="MealDetails text-white">
+                </div>
+            </div>
+        </div>
+        <div class="Ingredients d-none">
+            <div class="container">
+                <div class="row IngredientsList gy-4 my-5">
+                </div>
+                <div class="row IngredientsMeal  gy-4 my-5 ">
+                </div>
+                <div class="MealDetails text-white">
+                </div>
+            </div>
+        </div>
+        <div class="Contact vh-100 d-flex justify-content-center align-items-center d-none">
+            <div class="container w-75  text-center">
+                <div class="row ">
+                    <div class="col-md-6">
+                        <input type="text" id="regName" class="form-control bg-transparent text-white my-3 "
+                            placeholder="Enter Your Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" id="regEmail" class="form-control bg-transparent text-white  my-3"
+                            placeholder="Enter Your Mail">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" id="regNumber" class="form-control bg-transparent text-white my-3 "
+                            placeholder="Enter Your Phone">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" id="regAge" class="form-control bg-transparent text-white my-3 "
+                            placeholder="Enter Your Age">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" id="regPass" class="form-control bg-transparent text-white my-3"
+                            placeholder="Enter Your Password">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" id="regPass2" class="form-control bg-transparent text-white my-3"
+                            placeholder="RePassword">
+                    </div>
+                    <div class="NotMatch text-start d-none">
+                    </div>
+                </div>
+                <button class="btn  btn-outline-info  my-3" id="SignUp">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS LINKS -->
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/Main.js"></script>
+</body>
+
+</html>
